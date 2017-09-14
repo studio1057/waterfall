@@ -1,0 +1,8 @@
+#samples {}
+#samples .nav{float:left;	width:140px;	margin-right:10px; font-family: 'Open Sans', sans-serif; color: #69bdef; font-size: .6em; padding: 10px;display: box; border: 1px solid #adbcad; border-radius: 6px;box-shadow: 0px 3px 10px 1px rgba(184,184,184,1);}
+#samples .content{float:left; width:484px; padding:10px;10px;display: box; border: 1px solid #adbcad; border-radius: 6px;box-shadow: 0px 3px 10px 1px rgba(184,184,184,1); background-color: #ffffee;}
+#samples .content .p{margin-left: 20px;margin-bottom: 12px;float: left;overflow: hidden;position: relative; ;box-shadow: 0px 3px 10px 1px rgba(184,184,184,1); }
+
+
+#samples a{	text-decoration:none;font-size:16px;color:#002040;outline: none;}
+#samples a:hover{text-decoration:none;font-size:16px;color:#004080;outline: none; }

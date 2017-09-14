@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=600">
+	<title></title>
+	<script src="jquery-1.7.min.js"></script>
+	<script src="jquery.isotope.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style_isotope.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script>
+	$(document).ready(function()
+	{
+
+		  var samples = $('#samples').find('.content');
+			  samples.isotope({ itemSelector : '.p'});
+
+		  var options = {};
+
+		  var nav_a = $('#samples').find('.nav').find('a');
+			  nav_a.click(function()
+			  {
+				 var value = $(this).attr('value');
+				 options["filter"] = value;
+				 samples.isotope( options );
+
+				 return false;
+			  });
+
+	});
+	</script>
+</head>
+<body style="padding:0;margin:15px;background-color:#FFFFFF;">
+
+
+	<div id="samples">
+
+		<div class="nav">
+			<br/><br/>
+			<a href="#" value=".BusinessCard">Business Cards</a><br/><br/>
+			<a href="#" value=".LetterHeade">Letterheads</a><br/><br/>
+			<a href="#" value=".Combined">Complete Stationary Sets</a><br/><br/>
+			<a href="#" value="*">All Products</a><br/>
+		</div>
+
+
+		<div class="content">
+			<div class="p BusinessCard aa1"><img src="img/aa1.jpg"/></div>
+			<div class="p BusinessCard aa2"><img src="img/aa2.jpg"/></div>
+			<div class="p LetterHeade bb1"><img src="img/bb1.jpg"/></div>
+			<div class="p Combined cc1"><img src="img/cc1.jpg"/></div>
+			<div class="p BusinessCard aa3"><img src="img/aa3.jpg"/></div>
+			<div class="p LetterHeade bb2"><img src="img/bb2.jpg"/></div>
+				<div class="p Combined cc2"><img src="img/cc2.jpg"/></div>
+			<div class="p BusinessCard aa4"><img src="img/aa4.jpg"/></div>
+			<div class="p LetterHeade bb3"><img src="img/bb3.jpg"/></div>
+					<div class="p Combined cc3"><img src="img/cc3.jpg"/></div>
+			<div class="p BusinessCard aa5"><img src="img/aa5.jpg"/></div>
+			<div class="p LetterHeade bb4"><img src="img/bb4.png"/></div>
+					<div class="p Combined cc4"><img src="img/cc4.jpg"/></div>
+			<div class="p BusinessCard aa6"><img src="img/aa6.jpg"/></div>
+			<div class="p LetterHeade bb5"><img src="img/bb5.jpg"/></div>
+			<div class="p LetterHeade bb6"><img src="img/bb6.jpg"/></div>
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
